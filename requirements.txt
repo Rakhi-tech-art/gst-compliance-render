@@ -1,0 +1,11 @@
+# Requirements for Render deployment
+Django==5.2.6
+djangorestframework==3.16.1
+gunicorn==21.2.0
+psycopg2-binary==2.9.9
+dj-database-url==3.0.1
+whitenoise==6.11.0
+python-decouple==3.8
+django-cors-headers==4.8.0
+pillow==11.3.0
+pytz==2025.2

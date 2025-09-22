@@ -1,0 +1,34 @@
+RAILWAY ENVIRONMENT VARIABLES
+=============================
+
+Copy and paste these into your Railway project Variables tab:
+
+SECRET_KEY = django-insecure-gst-compliance-railway-2025-deployment-secret-key-change-in-production
+
+DEBUG = False
+
+ALLOWED_HOSTS = *.railway.app
+
+RAILWAY_STATIC_URL = /static/
+
+# Optional: If you add PostgreSQL database, Railway will automatically set:
+# DATABASE_URL = postgresql://user:password@host:port/database
+
+# Optional: If you add Redis, Railway will automatically set:
+# REDIS_URL = redis://host:port
+
+=============================
+INSTRUCTIONS:
+1. Go to your Railway project dashboard
+2. Click "Variables" tab
+3. Click "New Variable" for each one above
+4. Your app will automatically redeploy
+=============================
+
+RAILWAY PROJECT SETTINGS:
+- Build Command: (auto-detected)
+- Start Command: gunicorn gst_compliance_system.wsgi:application
+- Port: $PORT (auto-set by Railway)
+- Domain: your-project-name.up.railway.app
+
+=============================
